@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CPMS.API.Models.Account;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -22,7 +23,11 @@ namespace CPMS.API.Models
                 });
         }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Department> Departments { get; set; }
+        public DbSet<Department> Department { get; set; }
         public DbSet<Project> Projects { get; set; }
+
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<Role> Roles { get; set; }
     }
 }

@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace CPMS.API.API.Controllers
 {
+    [System.Web.Http.Authorize]
     public class ProjectsController : ApiController
     {
         private readonly ProjectDAL _projectDAL;
